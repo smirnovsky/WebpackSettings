@@ -19,3 +19,18 @@ header {
     min-height: 200px;
     border: 1px solid rgb(103, 4, 4);
 }
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/less/index.less ***!
+  \**************************************************************************************************************/
+.box {
+  padding: 20px;
+}
+.box-title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: blue;
+}
+.box-text {
+  margin-bottom: 20px;
+}
+

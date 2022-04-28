@@ -29,11 +29,23 @@ module.exports = {
           },
         port: 4200
     },
+    resolve: {
+        extensions: ['.js','.ts']
+    },
     module: {
         rules: [
             {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader"],
+            },
+            {
+                test: /\.less$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"],
+            },
+            {
+                test: /\.(js|ts)$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
             }
         ]
     } 
